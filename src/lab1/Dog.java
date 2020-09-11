@@ -1,20 +1,20 @@
-package Ball;
+package lab1;
 import java.lang.*;
-public class Ball {
+public class Dog {
     private String name;
     private int age;
-    public Ball(String n, int a){
+    public Dog(String n, int a){
         name = n;
         age = a;
     }
-    public Ball(String n){
+    public Dog(String n){
         name = n;
         age = 0;
 
     }
-    public Ball(){
-        name = "Blue";
-        age = 2;
+    public Dog(){
+        name = "Pup";
+        age = 0;
     }
     public void setAge(int age) {
         this.age = age;
@@ -31,8 +31,7 @@ public class Ball {
     public String toString(){
         return this.name+", age "+this.age;
     }
-    public void Rez(){
-        System.out.println(name+"-Цвет шара; "+age+"-Радиус");
+    public void intoHumanAge(){
+        System.out.println(name+"'s age in human years is "+age*7+" years");
     }
 }
-
